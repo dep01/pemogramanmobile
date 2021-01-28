@@ -26,14 +26,14 @@ export const onLogin = ({navigation}) => {
       ToastAndroid.SHORT,
     );
   } else {
-    if (state.username != 'admin' && state.password != 'admin') {
+    if (state.username == 'admin' && state.password == 'admin') {
+      navigation.navigate('/welcome');
+    } else {
       ToastAndroid.show(
         'Username atau password salah!',
         ToastAndroid.SHORT,
         ToastAndroid.SHORT,
       );
-    } else {
-      navigation.navigate('/home');
     }
   }
 };

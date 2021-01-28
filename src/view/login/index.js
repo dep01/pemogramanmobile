@@ -5,6 +5,8 @@ import {Input} from 'react-native-elements';
 import {icon} from '../../utils/constants';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import * as store from './store';
+import * as globalStore from '../../utils/global_state';
+
 import {styles} from './styles';
 const ButtonIcon = (props) => {
   return (
@@ -58,8 +60,12 @@ export default view(({navigation}) => {
             />
           }
         />
+
         <TouchableOpacity
-          onPress={() => store.onLogin({navigation})}
+          onPress={() => {
+            globalStore.globalState.username = store.state.username;
+            store.onLogin({navigation});
+          }}
           style={styles.buttonLogin}>
           <Text style={styles.text}>Login</Text>
         </TouchableOpacity>

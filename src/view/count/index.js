@@ -7,6 +7,7 @@ import {Input} from 'react-native-elements';
 import {styles} from './styles';
 import {baseColor} from '../../utils/constants';
 import {state} from '../home/store';
+import * as globalStore from '../../utils/global_state';
 export default view(({navigation, route}) => {
   useEffect(() => {
     store.state.type = route.params.type;

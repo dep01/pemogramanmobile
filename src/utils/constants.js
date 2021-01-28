@@ -22,12 +22,38 @@ export const baseColor = {
   body: mode == 'dark' ? '#1F1F1F' : '#f5f5f5',
   text: mode == 'dark' ? 'white' : 'black',
 };
-export const colors = {
-  body1: mode == 'dark' ? '#002766' : '#bae7ff',
-  body2: mode == 'dark' ? '#00474f' : '#b5f5ec',
-  body3: mode == 'dark' ? '#237804' : '#b7eb8f',
-  body4: mode == 'dark' ? '#820014' : '#ffa39e',
-  body5: mode == 'dark' ? '#434343' : '#d9d9d9',
-  body6: mode == 'dark' ? '#10239e' : '#adc6ff',
-  text: mode == 'dark' ? '#fff' : '#000',
-};
+export const colors = [
+  mode == 'dark' ? '#002766' : '#bae7ff',
+  mode == 'dark' ? '#00474f' : '#b5f5ec',
+  mode == 'dark' ? '#237804' : '#b7eb8f',
+  mode == 'dark' ? '#820014' : '#ffa39e',
+  mode == 'dark' ? '#434343' : '#d9d9d9',
+  mode == 'dark' ? '#10239e' : '#adc6ff',
+  // {
+  //   name:'body1',
+  //   color: mode == 'dark' ? '#002766' : '#bae7ff',
+  // },
+  // {
+  //   name:'body2',
+  //   color: mode == 'dark' ? '#00474f' : '#b5f5ec',
+  // },
+  // {
+  //   name:'body3',
+  //   color: mode == 'dark' ? '#237804' : '#b7eb8f',
+  // },
+  // {
+  //   name:"body4",
+  //   color: mode == 'dark' ? '#820014' : '#ffa39e',
+  // },
+  // {
+  //   name:'body5',
+  //   color: mode == 'dark' ? '#434343' : '#d9d9d9',
+  // },
+  // {
+  //   name:""
+  //   body6: mode == 'dark' ? '#10239e' : '#adc6ff',
+  // },
+  // {
+  //   text: mode == 'dark' ? '#fff' : '#000',
+  // },
+];
